@@ -1,0 +1,35 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: navajowhite;
+}
+
+h1 {
+    text-align: center;
+    font-size: clamp(2rem, 3vw, 5rem);
+    margin:20px;
+}
+
+#control-panel {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+button {
+    display: block;
+    margin:30px;
+    width:130px;
+    height:50px;
+    background: linear-gradient(90deg, #224477, #544533);
+    color: white;
+    font-weight: 900;
+    
+}
