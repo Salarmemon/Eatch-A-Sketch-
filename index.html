@@ -8,15 +8,19 @@
     <meta name="Description" content="Etch A Sketch is a web-based project that allows users to draw on a grid using their mouse"
 </head>
 <body>
+    <header>
     <h1 id="title">Etch A Sketch</h1>
+    </header>
+
+    <main id="main-content">
     <aside id="control-panel">
-        <input type="color"/>
+        <input type="color" id="color-picker"/>
 
         <div class="modes">
-            <buttom id="color-mode">Color Mode</buttom>
-            <button id="rainbow-mode">Rainbow Mode</button>
-            <button id="black-and-white-mode">Black and White</button>
-            <button id="erase-mode">Erase  Mode</button>
+            <buttom id="color-mode" class="mode">Color Mode</buttom>
+            <button id="rainbow-mode" class="mode">Rainbow Mode</button>
+            <button id="black-and-white-mode" class="mode">Black and White</button>
+            <button id="erase-mode" class="mode">Erase  Mode</button>
         </div>
 
         <button id="clear-btn">Clear</button>
@@ -24,5 +28,9 @@
     </aside>
 
     <div id="drawing-grid"></div>
+
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

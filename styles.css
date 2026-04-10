@@ -7,6 +7,7 @@
 
 body {
     background-color: navajowhite;
+
 }
 
 h1 {
@@ -22,14 +23,60 @@ h1 {
     align-items: flex-start;
     gap: 22px;
 }
+input[type="color"] {
+    border-radius: 50%;
+    margin: 20px;
+    width: 100px;
+    height: 50px;
+    border: 2px solid saddlebrown   ;
+}
+
 
 button {
     display: block;
-    margin:30px;
+    margin:30px 15px;
     width:130px;
     height:50px;
     background: linear-gradient(90deg, #224477, #544533);
     color: white;
     font-weight: 900;
+    transition: all 0.3s;
+    cursor: pointer;
     
+}
+
+button:hover {
+    background: linear-gradient(90deg, #544533, #224477);
+    transform: translate(15px);
+    transform: scale(1.1);
+
+}
+
+#drawing-grid {
+    width:60vw;
+    height:700px;
+    background-color: white;
+    display: flex;
+    gap:1px;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-basis: 60vw;
+  
+    
+}
+
+#main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.drawing-div {
+    width:50px;
+    height:50px;
+    background-color: #224477;
+      flex-shrink: 1;
+    flex-grow: 1;
 }
