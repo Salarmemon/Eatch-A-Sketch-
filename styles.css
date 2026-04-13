@@ -59,7 +59,7 @@ button:hover {
     height: auto;
     background-color: white;
     display: flex;
-    gap:1px;
+    
   
     
 }
@@ -72,6 +72,7 @@ button:hover {
 }
 
 .drawing-div {
-    background-color: #224477;
+    background-color: white;
     aspect-ratio: 1 /1;
+    opacity: 0;
 }
