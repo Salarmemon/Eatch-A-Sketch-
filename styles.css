@@ -34,7 +34,7 @@ input[type="color"] {
 
 button {
     display: block;
-    margin:30px 15px;
+    margin:2vw;
     width:130px;
     height:50px;
     background: linear-gradient(90deg, #224477, #544533);
@@ -54,11 +54,11 @@ button:hover {
 
 #drawing-grid {
     display: grid;
-    height: 60vh;
+    height: 80%;
     width:60vw;
     height: auto;
     background-color: white;
-    display: flex;
+
     
   
     
@@ -75,4 +75,12 @@ button:hover {
     background-color: white;
     aspect-ratio: 1 /1;
     opacity: 0;
+}
+
+.selected {
+    border: 2px solid #22ff22;
+}
+
+#clear-btn {
+    background: linear-gradient(90deg, #996644, #aa2233);
 }

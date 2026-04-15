@@ -41,6 +41,8 @@ const generateDiv = (divId, width, height) => {
         } else if (mode === "black-and-white-mode") {
             let color = Math.random() > 0.5 ? "black" : "white";
             e.target.style.backgroundColor = color;
+        } else if (mode === "erase-mode") {
+            e.target.style.backgroundColor = "white";
         }
     })
 
@@ -66,10 +68,11 @@ colorPickerElm.addEventListener("change", (e) => {
 })
 //let the user select drawing mode
 modeElms.forEach((elm) => {
-    elm.style.backgroundColor = "none";
+    
     elm.addEventListener("click", (e) => {
         mode = e.target.id;
-        e.target.style.border = "3px solid green";
+        modeElms.forEach(el => el.classList.remove("selected"));
+        e.target.classList.add("selected");
     })
 })
 
@@ -87,4 +90,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         drawingGrid.appendChild(gridDiv);
     }
+})
+
+clearBtn.addEventListener("click", () => {
+    const drawingDivs = getElm("drawing-div", "class", true);
+
+    drawingDivs.forEach(div => {
+        div.style.backgroundColor = "white";
+        div.style.opacity = "0";
+    })
 })
