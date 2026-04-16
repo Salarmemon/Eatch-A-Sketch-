@@ -54,7 +54,7 @@ button:hover {
 
 #drawing-grid {
     display: grid;
-    height: 80%;
+    height: 80vh;
     width:60vw;
     height: auto;
     background-color: white;
